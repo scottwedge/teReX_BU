@@ -13,7 +13,7 @@ from helper import generateVocabulary
 import pdb
 
 
-def script():
+def buildGraph():
 	
 	database  = GraphDatabase()
 	name = '20_class'
@@ -134,4 +134,4 @@ def script():
 
 
 if __name__ == '__main__':
-    script()
+    buildGraph()
