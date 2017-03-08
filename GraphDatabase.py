@@ -7,7 +7,10 @@ import decimal
 class GraphDatabase():
 
     	def __init__(self):
-        	self.graph = Graph('http://neo4j:zxmga21@localhost:7474/db/data')
+		try:
+			self.graph = Graph('http://username:password@localhost:7474/db/data')
+		except:
+			print 'ERROR: Initialize Neo4j browser'
         	self.graph.delete_all()
 
 
