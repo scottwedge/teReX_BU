@@ -1,6 +1,7 @@
 import unittest
 from py2neo import Node
-from teReX import GraphDatabase
+#from teReX import GraphDatabase
+from GraphDatabase import GraphDatabase
 
 class test_GraphDatabase(unittest.TestCase):
 
@@ -23,4 +24,4 @@ class test_GraphDatabase(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    uniitest.main()
+    unittest.main()
